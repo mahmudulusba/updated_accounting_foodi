@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import ResetPassword from "./pages/ResetPassword";
 import NotFound from "./pages/NotFound";
 import SRSDocument from "./pages/SRSDocument";
+import Config from "./pages/Config";
 import FoodiLoader from "./components/FoodiLoader";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ function AppRoutes() {
       />
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/srs-document" element={<SRSDocument />} />
+      <Route path="/config" element={<Config />} />
       
       {/* Management Accounting Routes */}
       <Route path="/management/*" element={
